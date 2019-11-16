@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string item1, item2, item3, item4, item5;
+
+
+
+class Orderclass{
+    public:
+    void order (string x){
+        item = x;
+    }
+        string getOrder(){
+            return item;
+        }
+
+private:
+string item;
+};
+int main()
+{
+Orderclass oc;
+oc.order (" ");
+
+cout << oc.getOrder();
+
+cout << ("PLEASE PLACE YOUR ORDER: ");
+cin >> item1;
+cout << ("ANYTHING ELSE: ");
+cin >> item2;
+cout << ("ANYTHING ELSE: ");
+cin >> item3;
+cout << ("ANYTHING ELSE: ");
+cin >> item4;
+cout << ("Last Item: ");
+cin >> item5;
+cout << ("OKAY YOU WOULD LIKE A ") << item1 << item2 << item3 << item4 << item5;
+
+
+
+
+
+    return 0;
+}
